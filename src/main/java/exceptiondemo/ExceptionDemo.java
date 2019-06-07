@@ -10,12 +10,8 @@ public class ExceptionDemo {
         Login lo = new Login();
         try{
             lo.auth(un,psd);
-        }catch(InvalidLoginException iv){
-            System.err.println("Your USER NAME is wrong, Please try again");
-        }catch(ValidLoginException iv){
-            System.err.println("Your USERNAME and PASSWORD is correct, Proceed");
         }catch(Exception e){
-            System.err.println(e);
+            System.err.println("Some Error");
         }finally{
             System.out.println("IAM FROM FINALLY BLOCK");
         }
