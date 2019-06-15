@@ -15,7 +15,7 @@ public class Data {
             al.add(val);
         }
         System.out.println("==============");
-        return aal;
+        return al;
     }
     public void dataManip(ArrayList al){
         System.out.println("==============");
